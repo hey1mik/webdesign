@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/3062584ccb.js" crossorigin="anonymous"></script>
+	<title>VEGITORY :: 상세 게시글 </title>
+	<style type="text/css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		body{
+			background-color: white;
+		}
+		.board_wrap{
+			width: 1400px;
+			overflow: hidden;
+			margin: 0 auto; 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0px 10px;
+		}
+		.board_title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 30px 0 30px 0;
+		}
+		.board_name {
+			background: #E2D6C1;
+			padding: 1px 40px 1px 40px;
+			border-radius: 20%;
+			font-size: 30px;
+			font-family: 'Libre Baskerville', serif;
+			font-weight: 600;
+		}
+		.board_sub_name{
+			padding: 1px;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="board_wrap">
+			<div class="board_title">
+				<div class="board_name">COMMUNITY</div>
+				<div class="board_sub_name"> '자유게시판' 입니다. </div>
+			</div>
+			<div class="free_view_contents">
+				<div class="free_view_info">
+					<div class="view_title">제목</div>
+					<div class="view_other_info">
+						<span id="view_id">닉네임</span>
+						<span id="view_viewno">글번호 1</span>
+						<span id="view_viewcnt">조회 0</span>
+						<span id="view_replycnt">댓글 0</span>
+						<span id="view_goodcnt">좋아요 0</span>
+						<span id="view_regdate">2020-03-20</span>
+					</div>
+				</div>	
+				<div class="view_content">
+					<input type="text" class="view_content_input" name="content">
+					<div class="view_content_buttons">
+						<div class="listNanswer">
+							<button id="list_view"> 목록 </button>
+							<button id="reply_view"> 답변 </button>
+						</div>
+						<div class="alterNdelete">
+							<button id="alter_view"> 수정 </button>
+							<button id="delete_view"> 삭제 </button>
+						</div>
+					</div> 
+				</div>	
+			<div class="free_board_comments">
+				<div class="comment_cnt"> 댓글: 1 </div>
+				<div class="comment_area">
+					<div class="one_comment">
+						<div class="comment_info">
+							<span class="comment_id"></span>
+							<span class="comment_regdate"></span>
+							<button id="alter_comment">수정</button>
+							<button id="delete_comment">삭제</button>
+							<button id="reply_comment">답변</button>
+						</div>
+						<div class="comment_content">댓글 영역입니다.</div>
+					</div>
+					<div class="input_comment">
+						<input type="text" class="comment_content_input" name="comment">
+						<button type="submit"> 댓글등록 </button>
+					</div>
+				</div>
+			</div>	
+
+	</div>		
+</body>
+</html>
